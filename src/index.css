@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Compacta Black Poster W01';
+  src: url('../public/Compacta Black Poster W01.ttf') format('truetype');
+}
+
+.headline {
+  font-family: 'Compacta Black Poster W01', sans-serif;
+}
+
+.tweet {
+  background-color: #fff;
+  color: #000;
+}
+
+.tag {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tweet {
+    background-color: #222;
+    color: #fff;
+  }
+
+  .tag {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+  }
+}
+
+/* === Font for YE TWEETS title only === */
+@font-face {
+  font-family: 'Compacta';
+  src: url('../public/Compacta Black Poster W01.ttf') format('truetype');
+}
+
+.headline {
+  font-family: 'Compacta', sans-serif;
+}
+
+/* === Light Mode (Default) === */
+.tweet {
+  background-color: #fff;
+  color: #000;
+}
+
+/* === Dark Mode Overrides === */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: #fff;
+  }
+  .tweet {
+    background-color: #222;
+    color: #fff;
+  }
+  .taglist .tag {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+}
